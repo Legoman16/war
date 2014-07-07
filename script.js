@@ -27,9 +27,20 @@ $(document).ready(function() {
 			deck.push({number: j+1, suit: suit});
 		}
 	}
-	
 	//shuffle the deck
+	function shuffleArray(deck) {
+    for (var i = deck.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = deck[i];
+        deck[i] = deck[j];
+        deck[j] = temp;
+    }
+    return array;
+}
 	
+	var deck = function(shuffleArray);
+	console.log(deck);
+	return(deck);
 	
 	var cards_player_1 = [];
 	var cards_player_2 = [];
